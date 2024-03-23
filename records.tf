@@ -21,7 +21,7 @@ resource "aws_route53_record" "AAAA_lucas_rs" {
   type    = "AAAA"
   ttl     = 300
   records = [
-    "2804:14c:47:8967:78c4:f21d:777:b1a6",
+    var.ipv6,
   ]
 }
 
